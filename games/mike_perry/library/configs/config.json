@@ -1,0 +1,68 @@
+{
+    "workingName": "Mike Perry",
+    "frontendConfig": {
+        "file": "fe_config.json",
+        "sha256": "8dc357c5aeeceba77bf023cb805406f516d7d01521c8c1d741a6bd3347889a5a"
+    },
+    "gameID": "mike_perry",
+    "rtp": 97.0,
+    "betDenomination": 1000,
+    "minDenomination": 10,
+    "providerNumber": 0,
+    "standardForceFile": {
+        "file": "force.json",
+        "sha256": "2d7382d20cd64cb976052830c2320c22da84024e5e6263a2c70f09c87cda9d2a"
+    },
+    "bookShelfConfig": [
+        {
+            "name": "base",
+            "tables": [
+                {
+                    "file": "lookUpTable_base_0.csv",
+                    "sha256": "863d6ebb998be6f9d5d73a72f35e5949e33587e9babe35e39dd9efb4f43a2d76"
+                }
+            ],
+            "cost": 1.0,
+            "rtp": 0.97,
+            "std": 10.74,
+            "bookLength": 10000,
+            "feature": true,
+            "autoEndRoundDisabled": false,
+            "buyBonus": false,
+            "maxWin": 5000,
+            "booksFile": {
+                "file": "books_base.jsonl.zst",
+                "sha256": "90038f11e8007220704ac53cb464cbfe2bdc9d8a9cc6ae898a45913c38c09958"
+            },
+            "forceFile": {
+                "file": "force_record_base.json",
+                "sha256": "bb6ebd7d78e341764dd58fd72f9310bdaf348a4cafccef34f45062d2142aa4c5"
+            }
+        },
+        {
+            "name": "bonus",
+            "tables": [
+                {
+                    "file": "lookUpTable_bonus_0.csv",
+                    "sha256": "22e9b6d4368e229b7939161f84e76a283571529c64f6edb5d463ed2febdcddf8"
+                }
+            ],
+            "cost": 100.0,
+            "rtp": 0.97,
+            "std": 1.33,
+            "bookLength": 10000,
+            "feature": false,
+            "autoEndRoundDisabled": false,
+            "buyBonus": true,
+            "maxWin": 5000,
+            "booksFile": {
+                "file": "books_bonus.jsonl.zst",
+                "sha256": "ea204d38da7456b05cef3ca5d1b11476ef63451821f666c1e61f08f4ca255976"
+            },
+            "forceFile": {
+                "file": "force_record_bonus.json",
+                "sha256": "0a966e53095f041003b75d76d39854f0cacbe1c0b0482e2509ad2ebe907b8c6f"
+            }
+        }
+    ]
+}

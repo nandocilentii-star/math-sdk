@@ -1,0 +1,221 @@
+{
+    "game_id": "mike_perry",
+    "bet_modes": [
+        {
+            "bet_mode": "base",
+            "cost": 1.0,
+            "rtp": 0.97,
+            "max_win": 5000
+        },
+        {
+            "bet_mode": "bonus",
+            "cost": 100.0,
+            "rtp": 0.97,
+            "max_win": 5000
+        }
+    ],
+    "fences": [
+        {
+            "bet_mode": "base",
+            "fences": [
+                {
+                    "name": "wincap",
+                    "avg_win": "5000",
+                    "rtp": "0.01",
+                    "identity_condition": {
+                        "search": [],
+                        "win_range_start": 5000,
+                        "win_range_end": 5000,
+                        "opposite": false
+                    }
+                },
+                {
+                    "name": "0",
+                    "avg_win": "0",
+                    "rtp": "0",
+                    "identity_condition": {
+                        "search": [],
+                        "win_range_start": 0,
+                        "win_range_end": 0,
+                        "opposite": false
+                    }
+                },
+                {
+                    "name": "freegame",
+                    "hr": "200",
+                    "rtp": "0.37",
+                    "identity_condition": {
+                        "search": [
+                            {
+                                "name": "symbol",
+                                "value": "scatter"
+                            }
+                        ],
+                        "win_range_start": -1,
+                        "win_range_end": -1,
+                        "opposite": false
+                    }
+                },
+                {
+                    "name": "basegame",
+                    "hr": "3.5",
+                    "rtp": "0.59",
+                    "identity_condition": {
+                        "search": [],
+                        "win_range_start": -1,
+                        "win_range_end": -1,
+                        "opposite": false
+                    }
+                }
+            ]
+        },
+        {
+            "bet_mode": "bonus",
+            "fences": [
+                {
+                    "name": "wincap",
+                    "avg_win": "5000",
+                    "rtp": "0.01",
+                    "identity_condition": {
+                        "search": [],
+                        "win_range_start": 5000,
+                        "win_range_end": 5000,
+                        "opposite": false
+                    }
+                },
+                {
+                    "name": "freegame",
+                    "hr": "x",
+                    "rtp": "0.96",
+                    "identity_condition": {
+                        "search": [],
+                        "win_range_start": -1,
+                        "win_range_end": -1,
+                        "opposite": false
+                    }
+                }
+            ]
+        }
+    ],
+    "dresses": [
+        {
+            "bet_mode": "base",
+            "dresses": [
+                {
+                    "fence": "basegame",
+                    "scale_factor": "1.2",
+                    "identity_condition_win_range": [
+                        1,
+                        2
+                    ],
+                    "prob": 1.0
+                },
+                {
+                    "fence": "basegame",
+                    "scale_factor": "1.5",
+                    "identity_condition_win_range": [
+                        10,
+                        20
+                    ],
+                    "prob": 1.0
+                },
+                {
+                    "fence": "freegame",
+                    "scale_factor": "0.8",
+                    "identity_condition_win_range": [
+                        1000,
+                        2000
+                    ],
+                    "prob": 1.0
+                },
+                {
+                    "fence": "freegame",
+                    "scale_factor": "1.2",
+                    "identity_condition_win_range": [
+                        3000,
+                        4000
+                    ],
+                    "prob": 1.0
+                }
+            ]
+        },
+        {
+            "bet_mode": "bonus",
+            "dresses": [
+                {
+                    "fence": "freegame",
+                    "scale_factor": "1.2",
+                    "identity_condition_win_range": [
+                        1,
+                        20
+                    ],
+                    "prob": 1.0
+                },
+                {
+                    "fence": "freegame",
+                    "scale_factor": "0.5",
+                    "identity_condition_win_range": [
+                        20,
+                        50
+                    ],
+                    "prob": 1.0
+                },
+                {
+                    "fence": "freegame",
+                    "scale_factor": "1.8",
+                    "identity_condition_win_range": [
+                        50,
+                        100
+                    ],
+                    "prob": 1.0
+                },
+                {
+                    "fence": "freegame",
+                    "scale_factor": "0.8",
+                    "identity_condition_win_range": [
+                        1000,
+                        2000
+                    ],
+                    "prob": 1.0
+                },
+                {
+                    "fence": "freegame",
+                    "scale_factor": "1.2",
+                    "identity_condition_win_range": [
+                        3000,
+                        4000
+                    ],
+                    "prob": 1.0
+                }
+            ]
+        }
+    ],
+    "bias": [
+        {
+            "bet_mode": "base",
+            "bias": [
+                {
+                    "criteria": "basegame",
+                    "range": [
+                        2.0,
+                        3.0
+                    ],
+                    "prob": 0.5
+                }
+            ]
+        },
+        {
+            "bet_mode": "bonus",
+            "bias": [
+                {
+                    "criteria": "freegame",
+                    "range": [
+                        200.0,
+                        350.0
+                    ],
+                    "prob": 0.3
+                }
+            ]
+        }
+    ]
+}
